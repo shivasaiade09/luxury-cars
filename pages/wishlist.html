@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      padding: 40px;
+    }
+    li {
+      margin: 10px 0;
+      padding: 10px;
+      background: #111;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Wishlist</h1>
+  <ul id="wishlist"></ul>
+
+  <script>
+    const list = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const ul = document.getElementById('wishlist');
+
+    if (list.length === 0) {
+      ul.innerHTML = '<li>No cars in wishlist.</li>';
+    } else {
+      list.forEach(car => {
+        const li = document.createElement('li');
+        li.textContent = car;
+        ul.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
