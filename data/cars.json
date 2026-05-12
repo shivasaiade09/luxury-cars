@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bugatti Chiron",
+    "price": "$3,000,000",
+    "topSpeed": "420 km/h"
+  },
+  {
+    "name": "Lamborghini Aventador",
+    "price": "$500,000",
+    "topSpeed": "350 km/h"
+  },
+  {
+    "name": "Ferrari SF90",
+    "price": "$625,000",
+    "topSpeed": "340 km/h"
+  }
+]
